@@ -1,0 +1,5 @@
+{
+  "vue.features.codeActions.enable": false,
+  "vue.codeActions.enabled": false,
+  "cSpell.enabled": false
+}
