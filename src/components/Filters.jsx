@@ -43,7 +43,7 @@ function Filters({
   const resetSubscriptions = useMutation({
     mutationFn: () =>
       axios
-        .put(`/groups/${groupId}/reset-subscriptions`, {
+        .post(`/groups/${groupId}/reset-subscriptions`, {
           password,
         })
         .then(() => {
@@ -57,7 +57,7 @@ function Filters({
   const resetMarks = useMutation({
     mutationFn: () =>
       axios
-        .put(`/groups/${groupId}/reset-marks`, {
+        .post(`/groups/${groupId}/reset-marks`, {
           password,
         })
         .then((res) => {
